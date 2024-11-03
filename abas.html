@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Abas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tab-container">
+        <button class="tab-button active" onclick="openTab(event, 'aba1')">Aba 1</button>
+        <button class="tab-button" onclick="openTab(event, 'aba2')">Aba 2</button>
+        <button class="tab-button" onclick="openTab(event, 'aba3')">Aba 3</button>
+    </div>
+
+    <div id="aba1" class="tab-content active">
+        <h2>Conteúdo da Aba 1</h2>
+        <p>Esta é a primeira aba.</p>
+    </div>
+
+    <div id="aba2" class="tab-content">
+        <h2>Conteúdo da Aba 2</h2>
+        <p>Esta é a segunda aba.</p>
+    </div>
+
+    <div id="aba3" class="tab-content">
+        <h2>Conteúdo da Aba 3</h2>
+        <p>Esta é a terceira aba.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

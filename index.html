@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<button class="play-button" id="playButton">Play MP3</button>
+<audio id="meuAudio">
+    <source src="Musica.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✯TJPE✯</title>
+    <link rel="icon" href="c:\Users\anavi\Desktop\Luiz\site Software\Incone principal.png" type="image/jpg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: url('https://via.placeholder.com/1920x1080/000000/FFFFFF/?text=+☼') no-repeat center center fixed; 
+            background-size: cover;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00ff00;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #000000;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        video {
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="c:\Users\anavi\Desktop\Luiz\site Software\Incone principal.png" alt="Ícone do Site" style="width: 100px;">
+        <h1>✯TJPE✯</h1>
+        <nav>
+            <a href="#Java">Java</a>
+            <a href="#Token">Token</a>
+            <a href="#TJPE">TJPE</a>
+        </nav>
+        <button onclick="logout()">Sair</button>
+    </header>
+
+    <section id="Java">
+        <h2>Java</h2>
+        <p>Primeiro, instale o Java: clique no botão de Download, aguarde o download ser concluído e execute o instalador como Administrador. Siga o passo a passo da instalação. Após concluir, baixe o TJPE, que está logo abaixo</p>
+        <img src="c:\Users\anavi\Desktop\Luiz\site Software\02.png" alt="Java" width="500">
+        <p><a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=251391_0d8f12bc927a4e2c9f8568ca567db4ee"><button>DOWNLOAD</button></a></p>
+    </section>
+
+    <section id="TJPE">
+        <h2>TJPE</h2>
+        <p>Em segundo lugar, após instalar o Java, clique no botão de Download, aguarde o download ser concluído e execute o instalador como Administrador até finalizar a instalação. Depois de instalar, insira o Token no PC/Notebook e siga para o próximo programa abaixo..</p>
+        <img src="c:\Users\anavi\Desktop\Luiz\site Software\Incone principal.png" alt="TJPE" width="450">
+        <p><a href="https://pje-office.pje.jus.br/pro/pjeoffice-pro-v2.5.16u-windows_x64.exe"><button>DOWNLOAD</button></a></p>
+    </section>
+
+    <section id="Token">
+        <h2>Tonken</h2>
+        <p>Por fim, após conectar o token, clique no botão de Download, aguarde o download ser concluído e execute o instalador como Administrador. Siga o passo a passo da instalação e, ao concluir, reinicie o PC para atualizar o driver. Após reiniciar, configure o token. Caso tenha alguma dúvida, assista ao vídeo abaixo.</p>
+        <img src="c:\Users\anavi\Desktop\Luiz\site Software\Token.jpg" alt="Token" width="500">
+        <p><a href="https://drivers.certisign.com.br/midias/tokens/safenet/64bits/certisign10.6-x64-10.6.exe"><button>DOWNLOAD</button></a></p>
+    </section>
+
+    <div class="video-container">
+        <video width="800" controls>
+            <source src="c:\Users\anavi\Desktop\Luiz\site Software\Tutorial.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <script src="auth.js"></script>
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('meuAudio');
+            audio.play();
+        });
+    </script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas/Senhas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .timestamp {
+            color: #777;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .nota-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #000;
+        }
+        .nota-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Bloco de Notas/Senhas</h2>
+<textarea id="nota" placeholder="Escreva sua anotação aqui..."></textarea><br>
+<button onclick="salvarNota()">Salvar Anotação</button>
+<button onclick="limparNota()">Limpar Anotação</button>
+<button onclick="toggleHistorico()">Ocultar Histórico</button>
+<p id="timestamp" class="timestamp"></p>
+
+<h3>Histórico de Anotações</h3>
+<div id="historico"></div>
+
+<script>
+    function salvarNota() {
+        const nota = document.getElementById("nota").value;
+        if (!nota.trim()) {
+            alert("Por favor, insira uma anotação antes de salvar.");
+            return;
+        }
+
+        const dataAtual = new Date();
+        const novaNota = {
+            texto: nota,
+            data: dataAtual.toLocaleString()
+        };
+
+        let historicoNotas = JSON.parse(localStorage.getItem("historicoNotas")) || [];
+        historicoNotas.push(novaNota);
+        localStorage.setItem("historicoNotas", JSON.stringify(historicoNotas));
+
+        alert("Anotação salva com sucesso!");
+        document.getElementById("nota").value = "";
+        mostrarHistorico();
+    }
+
+    function mostrarHistorico() {
+        const historico = document.getElementById("historico");
+        historico.innerHTML = "";
+
+        const historicoNotas = JSON.parse(localStorage.getItem("historicoNotas")) || [];
+        historicoNotas.forEach((nota, index) => {
+            const notaDiv = document.createElement("div");
+            notaDiv.classList.add("nota-item");
+
+            const notaTexto = document.createElement("p");
+            notaTexto.textContent = nota.texto;
+
+            const notaData = document.createElement("p");
+            notaData.textContent = "Salvo em: " + nota.data;
+            notaData.classList.add("timestamp");
+
+            const apagarBotao = document.createElement("button");
+            apagarBotao.textContent = "Apagar";
+            apagarBotao.onclick = () => apagarNota(index);
+
+            notaDiv.appendChild(notaTexto);
+            notaDiv.appendChild(notaData);
+            notaDiv.appendChild(apagarBotao);
+            historico.appendChild(notaDiv);
+        });
+    }
+
+    function apagarNota(index) {
+        const historicoNotas = JSON.parse(localStorage.getItem("historicoNotas")) || [];
+        historicoNotas.splice(index, 1);
+        localStorage.setItem("historicoNotas", JSON.stringify(historicoNotas));
+        mostrarHistorico();
+        alert("Anotação apagada com sucesso!");
+    }
+
+    function limparNota() {
+        if (confirm("Tem certeza que deseja apagar a anotação atual?")) {
+            document.getElementById("nota").value = "";
+        }
+    }
+
+    function toggleHistorico() {
+        const historico = document.getElementById("historico");
+        const button = document.querySelector('button[onclick="toggleHistorico()"]');
+        
+        if (historico.style.display === "none") {
+            historico.style.display = "block";
+            button.textContent = "Ocultar Histórico de Anotações";
+        } else {
+            historico.style.display = "none";
+            button.textContent = "Mostrar Histórico de Anotações";
+        }
+    }
+
+    window.onload = mostrarHistorico;
+</script>
+
+    <footer>
+        &copy; 2024 TJPE. Direitos Autorais pertence a Marconi Gomes.
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>

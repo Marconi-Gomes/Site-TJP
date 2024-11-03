@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJPE Privado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('walpaper1.png'); /* Substitua pelo caminho correto da sua imagem */
+            background-repeat: no-repeat;
+            background-size: cover; /* Cobre toda a área */
+            background-position: center; /* Centraliza a imagem */
+        }
+
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 100px auto; /* Centraliza verticalmente */
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00ff00; /* Borda verde */
+        }
+
+        button {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #000;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00ff00;
+            color: #000;
+        }
+
+        #message {
+            margin-top: 20px;
+            color: red; /* Cor da mensagem de erro */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>TJPE</h2>
+        <input type="text" id="username" placeholder="Login">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
