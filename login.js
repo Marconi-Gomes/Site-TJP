@@ -3,7 +3,7 @@
 // Array para armazenar as credenciais dos usuários
 const users = [
     { username: "marconi", password: "123" },
-    { username: "luiz", password: "18162405" },
+    { username: "luiz", password: "123" },
     { username: "Luiz Mario", password: "123" },
     { username: "visitante", password: "123" }
 ];
